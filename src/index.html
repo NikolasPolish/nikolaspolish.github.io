@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -18,142 +20,190 @@
             </ul></div>
         </nav>
     </header>
-    <main>
-    <div class="main"><div class="title_conteiner">
-        <h1>Привет<br>Я Польский Николай</h1>
-        <h4>Фулл стек веб-разработчик</h4>
-        <input type="submit" value="Обо мне">
-        <input type="submit" value="Мои работы">
-    </div></div>
+    
+        <div class="main">
+            <div class="title__container">
+                <h1>Привет <br> Я Польский Николай</h1>
+                <h4>Фулл стек веб-разработчик</h4>
+                <input type="submit" value="Обо мне">
+                <input type="submit" value="Мои работы">
+            </div>
+        </div>
     <div class="information_on_me">
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi tempore expedita veritatis ex eos quas nemo iste temporibus minima.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi tempore expedita veritatis ex eos quas nemo iste temporibus minima.</p>
-        <a href="" download>Скачать резюме</a>
+        <p class="obo_me">ОБО МНЕ</p>
+        <hr class="hr_bottom_text">
+        <img class="fotome2" src="img/fotome2.jpg" alt="Моё фото">
+        <p class="text_one_obo_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi tempore expedita veritatis ex eos quas nemo iste temporibus minima.</p>
+        <p class="text_second_obo_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi tempore expedita veritatis ex eos quas nemo iste temporibus minima.</p>
+        <a href="" download class="dowlond_resume"><img src="img/downloadICO.png" alt="">  Скачать резюме</a>
     </div>
     <div class="my_skills">
         <p class="name_title_my_skills">Что я умею</p>
-        <hr>
+        <hr class="hr_bottom_text">
         <div class="web_desing">
-            <p>Веб-дизайн</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
+            <img class="png_me_skills" src="img/laptop.png" alt="">
+            <p class="title_text_my_skills_png">Веб-дизайн</p>
+            <p class="big_text_my_skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
         </div>
         <div class="development">
-            <p>Разработка</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
+            <img class="png_me_skills" src="img/develop.png" alt="" >
+            <p class="title_text_my_skills_png">Разработка</p>
+            <p class="big_text_my_skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
         </div>
         <div class="ceo_optimization">
-            <p>СЕО-оптимизация</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
+            <img class="png_me_skills" src="img/rocket.png" alt="">
+            <p class="title_text_my_skills_png">СЕО-оптимизация</p>
+            <p class="big_text_my_skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
         </div>
         <div class="Marketing">
-            <p>Маркетинг</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
+            <img class="png_me_skills" src="img/megaphone.png" alt="">
+            <p class="title_text_my_skills_png">Маркетинг</p>
+            <p class="big_text_my_skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
         </div>
     </div>
     <div class="cases">
         <p class="name_title_cases">Кейсы</p>
-        <hr>
-        <img src="" alt="">
+        <hr class="hr_bottom_text">
+        <p class="cases_tittle_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem aliquid, officiis possimus incidunt perspiciatis.</p>
+        <img class="png_cases" src="img/my_project.PNG" alt="">
+        <div class="cases_text">
+           <div class="cases_text_part_one">
+               <div class="cases_client">
+                 <p class="cases_text_bold">CLIENT:</p>
+                 <p class="cases_text_small">Какая-то компания</p> 
+               </div>
+               <div class="cases_website">
+                 <p class="cases_text_bold">WEBSITE</p>
+                 <p class="cases_text_small">https://www.google.com</p>
+              </div>
+              <a href="www.google.com" class="buttom_visit">VISIT LIVE SITE</a>
+           </div>
+           <div class="cases_text_part_second">
+           <div class="cases_name_progect">
+              <p class="cases_text_bold">Название проекта</p>
+              <p class="cases_text_normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quidem nulla ex vero dicta quas totam, deserunt incidunt, voluptatum officiis quam magni consequuntur consequatur. Voluptatum facere nulla quo ipsum corrupti eveniet itaque assumenda beatae soluta?</p>
+           </div>
+        </div>
+        </div>
     </div>
     <div class="price">
+        <div class="plus_price">
+            <p>РАСЧЁТ СТОИМОСТИ</p>
+        </div>
         <div class="type_saite">
+            <p class="tittle_text_type_site">
+                ТИП САЙТА
+            </p>
             <select name="type_saite_choice" class="type_saite_choice_tittle">
+             <option value="" class="price_point">Выберите пункт...</option>
              <option value="1" >тип сайта 1</option>
-             <option value="2">тип сайта 1</option> 
-             <option value="3">тип сайта 1</option> 
+             <option value="2">тип сайта 2</option> 
+             <option value="3">тип сайта 3</option> 
             </select>  
         </div>
         <div class="type_saite">
-            <select name="design_saite_choice" class="design_saite_choice_tittle">
+            <p class="tittle_text_type_site">
+                ДИЗАЙН САЙТА
+            </p>
+            <select name="design_saite_choice" class="type_saite_choice_tittle">
+             <option value="" class="price_point">Выберите пункт...</option>
              <option value="1">дизайн сайта 1</option>
-             <option value="2">дизайн сайта 1</option> 
-             <option value="3">дизайн сайта 1</option> 
+             <option value="2">дизайн сайта 2</option> 
+             <option value="3">дизайн сайта 3</option> 
             </select>
         </div>
         <div class="type_saite">
-            <select name="design_saite_choice" class="adaptability_saite_choice_tittle">
+            <p class="tittle_text_type_site">
+                АДАПТИВНОСТЬ
+            </p>
+            <select name="design_saite_choice" class="type_saite_choice_tittle">
+             <option value="" class="price_point">Выберите пункт...</option>
              <option value="1">Адаптивность сайта 1</option>
-             <option value="2">Адаптивность сайта 1</option> 
-             <option value="3">Адаптивность сайта 1</option> 
+             <option value="2">Адаптивность сайта 2</option> 
+             <option value="3">Адаптивность сайта 3</option> 
             </select>
         </div>
-        <p class="time_deadline">Сроки</p>
-        <p class="price_deadline"></p>
+        <hr class="price_hr">
+        <div class="calculator">
+         <div class="calculator_price_text">
+           <p class="time_deadline">Сроки</p>
+           <p class="price_deadline">Стоимость</p>
+         </div>
+         <div class="calculator_price">
+           <p>0</p>
+           <p>0</p>
+         </div>
+        </div>
     </div>
     <div class="statistics">
-        <p class="little_statictics">немного статистики</p>
+        <p class="little_statictics">НЕМНОГО СТАТИСТИКИ</p>
+        <hr class="hr_bottom_text">
+    <div class="statistic_blocks">
         <div class="happy_clients">
-            <img src="" alt="">
-            <p class="quantity_happy_clients">120</p>
-            <p class="text_happy_clients">счастливых клиентов</p>
+            <img src="img/smile.png" alt="smile" class="statistic_png">
+            <p class="quantity_statistic">1</p>
+            <p class="text_quantity">счастливых клиентов</p>
         </div>
         <div class="time_works">
-            <img src="" alt="">
-            <p class="quantity_time_works">4,600</p>
-            <p class="text_time_works">часов работы</p>
+            <img src="img/programming.png" alt="programming" class="statistic_png">
+            <p class="quantity_statistic">4,600</p>
+            <p class="text_quantity">часов работы</p>
         </div>
         <div class="project_finish">
-            <img src="" alt="">
-            <p class="quantity_project_finish">340</p>
-            <p class="text_project_finish">проектов завершено</p>
+            <img src="img/tick.png" alt="tick" class="statistic_png">
+            <p class="quantity_statistic">2</p>
+            <p class="text_quantity">проектов завершено</p>
         </div>
         <div class="present_have">
-            <img src="" alt="">
-            <p class="quantity_present_have">23</p>
-            <p class="text_present_have">Наград получено</p>
+            <img src="img/kubok.png" alt="kubok" class="statistic_png">
+            <p class="quantity_statistic">0</p>
+            <p class="text_quantity">Наград получено</p>
         </div>
     </div>
+    </div>
     <div class="reviews">
-        <p class="reviews_text">Отзывы</p>
-        <hr>
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cum dolorem dicta magni officia minus.</p>
+        <p class="reviews_text">ОТЗЫВЫ</p>
+        <hr class="hr_bottom_text">
+        <img src="img/review_man.png" alt="man" class="reviews_man_png">
+        <p class="reviers_text_comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cum dolorem dicta magni officia minus.</p>
     </div>
     <div class="contact">
         <p class="contact_tittle_text">мои контакты</p>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, culpa?</p>
+        <hr class="hr_bottom_text">
+        <p class="contact_bottom_text">Можете связаться со мной</p>
+        <div class="contact_information">
         <div class="contact_adress">
-            <img src="" alt="">
-            <p>Г. Москва</p>
-        </div>
-        <div class="contact_email">
-            <img src="" alt="">
-            <p>polsky.n@yandex.ru</p>
-        </div>
-        <div class="contact_phone">
-            <img src="" alt="">
-            <p>+7-977-606-56-17</p>
+              <img src="img/locate.png" alt="locate">
+              <p class="contact_text_information">Г. Москва</p>
+          </div>
+          <div class="contact_email">
+              <img src="img/mail.png" alt="mail">
+              <p class="contact_text_information">polsky.n@yandex.ru</p>
+          </div>
+          <div class="contact_phone">
+              <img src="img/phone.png" alt="phone">
+              <p class="contact_text_information">+7-977-606-56-17</p>
+          </div>
         </div>
         <div class="contact_massage_me">
-             <p class="contact_massage_me_text">оставьте мне сообщение</p>
-             <input type="text" placeholder="Имя">
-             <input type="text" placeholder="Email">
-             <textarea placeholder="Сообщение"></textarea>
-             <input type="submit" placeholder="Отправить">
-             <div class="contacts_links">
-                <div class="contacts_links_telegram">
-                    <a href="">телеграм</a>
-                </div>
-                <div class="contacts_links_vk">
-                    <a href="">вконтакте</a>
-                </div>
-                <div class="contacts_links_instagram">
-                    <a href="">инстаграм</a>
-                </div>
-                <div class="contacts_links_github">
-                    <a href="">github</a>
-                </div>
-             </div>
-        </div>
-        <div class="map">
-            <img src="" alt="">
+             <p class="contact_massage_me_text">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</p>
+             <div class="massage_me_inforation_client">
+             <input type="text" placeholder="Имя" class="massage_me_name">
+             <input type="text" placeholder="Email" class="massage_me_email">
+            </div>
+             <textarea placeholder="Сообщение" class="massage_me_massage"></textarea>
+             <input type="submit" placeholder="Отправить" class="submit_massage_me">
         </div>
     </div>
-    </main>
+        <div class="map">
+            <img src="img/map.png" alt="map">
+        </div>
+
+    
     <footer>
-        <p>Польский Николай Design Web</p>
+        <div class="footer">
+          <p class="footer_text">Польский Николай Design Web</p>
+        </div>
     </footer>
 </body>
 </html>
