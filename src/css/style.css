@@ -2,10 +2,118 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.preload{
+height: 500px;
+background: #1C2534;
+margin: 100px 100px;
+text-align: center;
+-webkit-animation: backgroundloading 5s ease forwards;
+    -o-animation: backgroundloading 5s ease forwards;
+    animation: backgroundloading 5s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundloading{
+    0%{
+        background:#1C2534;
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.9;
+    }
+    50% {
+        background: #ff8400;
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.9;
+    }
+    100%{
+        background: #1C2534;
+        opacity: 1;
+    }
+}
+.preloading {
+padding: 250px 0px 0px 0px;
+font-size: 30px;
+-webkit-animation: backgroundloadingtext 5s ease forwards;
+    -o-animation: backgroundloadingtext 5s ease forwards;
+    animation: backgroundloadingtext 5s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes backgroundloadingtext{
+    0%{
+        color:#ff8400;
+        opacity: 1;
+    }
+    50% {
+        color: #1C2534;
+        opacity: 1;
+    }
+    100%{
+        color: #ff8400;
+        opacity: 1;
+    }
+}
+
+.loading_1{
+    -webkit-animation: loading_1 1s ease forwards;
+    -o-animation: loading_1 1s ease forwards;
+    animation: loading_1 1s ease forwards;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes loading_1{
+    form{
+      opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.loading_2{
+    -webkit-animation: loading_2 2s ease forwards;
+    -o-animation: loading_2 2s ease forwards;
+    animation: loading_2 2s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes loading_2{
+    form{
+        opacity: 1;
+      }
+      to{
+          opacity: 0;
+      }
+}
+
+.loading_3{
+    -webkit-animation: loading_3 3s ease forwards;
+    -o-animation: loading_3 3s ease forwards;
+    animation: loading_3 3s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading_3{
+    form{
+        opacity: 1;
+      }
+      to{
+          opacity: 0;
+      }
+}
+
 nav{
     width:100%;
     height:60px;
     background: #344051;
+    position: fixed;
+    z-index: 1;
 }
 
 .logo{
@@ -14,6 +122,9 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
 }
 
 .menu{
@@ -28,19 +139,116 @@ color: #fff;
 margin-right: 40px;
 font-size: 16px;
 text-transform: uppercase;
+-webkit-animation: topshift 0.4s ease forwards;
+-o-animation: topshift 0.4s ease forwards;
+animation: topshift 0.4s ease forwards;
+opacity: 0;
 }
 
-.main{
+.main_tittle{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 1097px;
     background: url(../img/fotome1.jpg) center/cover no-repeat;
 }
 
 .title__container{
-    float: left;
-    margin: 432px 0px 0px 700px;
+    padding: 185px 0px 0px 0px;
     color: #cbd8ec;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+}
+
+.title__container input{
+ transition: all 0.2s;
+ transform: scale(1);
+}
+
+.title__container input:hover{
+    background: #344051;
+    color: white;
+    opacity: 0.5;
+   }
+
+.title__container input:active{
+ transform: scale(1.1);
+ opacity: 0.5;
+ }
+
+ @keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+ }
+
+ @keyframes topshift{
+    form{
+ opacity: 0;
+ margin-top: -80px;
+    }
+    to{
+opacity: 1;
+margin-top: 0px;
+    }
+ }
+
+ @keyframes titlemove{
+    form{
+ opacity: 0;
+ margin-top: 800px;
+    }
+    to{
+opacity: 1;
+margin-top: 0px;
+    }
+ }
+
+.menu li:nth-child(2){
+  animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+  }
+
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+  }
+
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+  }
+
+.menu li:nth-child(6){
+    animation-delay: 2s;
+  }
+
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+    }
+
+.menu li a:visited{
+color: white;
+}
+
+.menu li a:hover{
+    color: #ff8400;
+ }
+
+.menu li a:active{
+     color: #ff8400;
+     transform: scale(1.1);  
 }
 
 .title__container h1{
@@ -78,6 +286,46 @@ border-radius: 100%;
     text-align: center;
 }
 
+.information_on_me a{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.information_on_me a:hover{
+    color: white;
+    background:#263244 ;
+    transition-duration: 0.7s;
+}
+
+.information_on_me a:active{
+    transform: scale(1.1);
+    color: #ff8400;
+    opacity: 0.5;
+}
+
+.obo_me{
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #384354;
+    -webkit-animation: obome 5s ease;
+    -o-animation: obome 5s ease;
+    animation: obome 5s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes obome {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.7;
+        color: #ff8400;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .information_on_me .obo_me{
     text-align: center;
     font-size: 34px;
@@ -92,6 +340,41 @@ margin: 79px 128px 20px 128px;
     background: #EA7800;
     width: 72px;
     margin: 20px auto 44px auto;
+    -webkit-animation: hr 8s;
+    -o-animation: hr 8s;
+    animation: hr 8s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hr{
+    0%{
+        height: 4px;
+        width: 72px;
+    }
+    20%{
+        height: 4px;
+        width: 144px;
+    }
+    40%{
+        height: 4px;
+        width: 288px;
+    }
+    60%{
+        height: 4px;
+        width: 576px;
+    }
+    60%{
+        height: 4px;
+        width: 288px;
+    }
+    80%{
+        height: 4px;
+        width: 144px;
+    }
+    100%{
+        height: 4px;
+        width: 72px;
+    }
 }
 
 .information_on_me p{
@@ -122,8 +405,7 @@ margin-bottom: 70px;
     text-align: center;
     padding-top: 102px;
     margin: 102px 0px 60px 0px;
-    background: url(../img/what_i_can.png);
-    background-repeat: no-repeat;
+    background: url(../img/what_i_can.png) center/cover fixed no-repeat;
 }
 
 .my_skills .name_title_my_skills{
@@ -191,7 +473,24 @@ margin: 60px 0px 50px 0px;
     font-size: 34px;
     font-weight: bold;
     color: #384354;
-}
+    -webkit-animation: cases ease 5s;
+    -o-animation: cases ease 5s;;
+    animation: cases ease 5s;
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes cases{
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0.7;
+            color: #ff8400;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
 
 .cases_tittle_text{
     font-family: 'Calibri';
@@ -276,6 +575,27 @@ margin: 0px 0px 22px 517px;
 text-align: left;
 }
 
+.type_saite select{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.type_saite select:hover{
+    transition-duration: 0.4s;
+    color:white;
+    background-color: #93adce;
+}
+
+.type_saite select:active{
+    color: #1C2534;
+    background-color: white;
+    transform: scale(1.06);
+}
+
+.price_point{
+    padding: 0px 0px 0px 100px;
+}
+
 .type_saite_choice_tittle{
     width: 891px;
     height: 57px;
@@ -321,8 +641,7 @@ margin: -50px 505px 0px 0px;
 }
 
 .statistics{
-    background: url(../img/fon_statistic.png);
-    background-repeat: no-repeat;
+    background: url(../img/fon_statistic.png)center/cover fixed no-repeat;;
     text-align: center;
     height: 499px;
 }
@@ -393,6 +712,23 @@ font-size: 34px;
 line-height: 10px;
 margin: 100px 0px 30px 0px;
 color: #243042;
+-webkit-animation: reviews ease 5s;
+-o-animation: reviews ease 5s;
+animation: reviews ease 5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes reviews{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.7;
+        color: #ff8400;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .reviews_man_png{
@@ -409,9 +745,8 @@ color: #243042;
 }
 
 .contact{
-    background: url(../img/fon_3.png);
-    background-repeat: no-repeat;
-    height: 808px;
+    background: url(../img/fon_3.png)center/cover fixed no-repeat;;
+    padding: 0px 0px 80px 0px;
 }
 
 .contact_tittle_text{
@@ -475,6 +810,20 @@ color: #FFFFFF;
 text-align: center;
 }
 
+.links{
+    text-align: center;
+}
+
+.links :hover{
+    transform: scale(1.09)
+}
+
+.links_contact{
+    height: 50px;
+    width: 50px;
+    margin: 100px 50px 0px 0px;
+}
+
 .massage_me_name{
 width: 352px;
 height: 34px;
@@ -490,6 +839,41 @@ margin: 0px 0px 0px 15px;
 
 .contact_massage_me{
 text-align: center;
+}
+
+.contact_massage_me input{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.contact_massage_me input:hover{
+    color: white;
+    background:#263244 ;
+    transition-duration: 0.7s;
+    opacity: 0.5;
+}
+
+.contact_massage_me input:active{
+    transform: scale(1.1);
+    opacity: 0.5;
+    color:  #ff8400;
+}
+
+.contact_massage_me textarea{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.contact_massage_me textarea:hover{
+    color: white;
+    background:#263244 ;
+    transition-duration: 0.7s;
+    opacity: 0.5;
+}
+
+.contact_massage_me textarea:active{
+    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 .massage_me_massage{
@@ -541,3 +925,4 @@ color: #243042;
     text-align: center;
     padding: 38px 0px 32px 0px;
 }
+

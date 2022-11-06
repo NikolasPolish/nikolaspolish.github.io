@@ -11,33 +11,36 @@
         <nav>
             <div class="logo">Польский Николай</div>
             <div class="menu"><ul>
-                <li>Обо мне</li>
-                <li>Услуги</li>
-                <li>Кейсы</li>
-                <li>Прайс</li>
-                <li>Отзывы</li>
-                <li>Контакты</li>
+                <li><a href="">Обо мне</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">Кейсы</a></li>
+                <li><a href="">Прайс</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li><a href="">Контакты</a></li>
             </ul></div>
         </nav>
     </header>
-    
-        <div class="main">
+    <main>
+        <section class="main_tittle">
             <div class="title__container">
                 <h1>Привет <br> Я Польский Николай</h1>
                 <h4>Фулл стек веб-разработчик</h4>
-                <input type="submit" value="Обо мне">
-                <input type="submit" value="Мои работы">
+                <input type="button" value="Обо мне">
+                <input type="button" value="Мои работы">
             </div>
-        </div>
-    <div class="information_on_me">
-        <p class="obo_me">ОБО МНЕ</p>
+        </section>
+    <section class="information_on_me">
+        <p class="obo_me">Обо мне</p>
         <hr class="hr_bottom_text">
         <img class="fotome2" src="img/fotome2.jpg" alt="Моё фото">
         <p class="text_one_obo_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi tempore expedita veritatis ex eos quas nemo iste temporibus minima.</p>
         <p class="text_second_obo_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eligendi tempore expedita veritatis ex eos quas nemo iste temporibus minima.</p>
         <a href="" download class="dowlond_resume"><img src="img/downloadICO.png" alt="">  Скачать резюме</a>
-    </div>
-    <div class="my_skills">
+    </section>
+    <section class="preload">
+       <p class="preloading">loading <span class="loading_1">.</span ><span class="loading_2">.</span><span class="loading_3">.</span></p>
+    </section>
+    <section class="my_skills">
         <p class="name_title_my_skills">Что я умею</p>
         <hr class="hr_bottom_text">
         <div class="web_desing">
@@ -60,8 +63,8 @@
             <p class="title_text_my_skills_png">Маркетинг</p>
             <p class="big_text_my_skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p>
         </div>
-    </div>
-    <div class="cases">
+    </section>
+    <section class="cases">
         <p class="name_title_cases">Кейсы</p>
         <hr class="hr_bottom_text">
         <p class="cases_tittle_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem aliquid, officiis possimus incidunt perspiciatis.</p>
@@ -85,8 +88,8 @@
            </div>
         </div>
         </div>
-    </div>
-    <div class="price">
+    </section>
+    <section class="price">
         <div class="plus_price">
             <p>РАСЧЁТ СТОИМОСТИ</p>
         </div>
@@ -95,10 +98,10 @@
                 ТИП САЙТА
             </p>
             <select name="type_saite_choice" class="type_saite_choice_tittle">
-             <option value="" class="price_point">Выберите пункт...</option>
-             <option value="1" >тип сайта 1</option>
-             <option value="2">тип сайта 2</option> 
-             <option value="3">тип сайта 3</option> 
+             <option value="" class="price_point">  Выберите пункт...</option>
+             <option value="1" class="price_point">  тип сайта 1</option>
+             <option value="2"class="price_point">  тип сайта 2</option> 
+             <option value="3"class="price_point">  тип сайта 3</option> 
             </select>  
         </div>
         <div class="type_saite">
@@ -106,10 +109,10 @@
                 ДИЗАЙН САЙТА
             </p>
             <select name="design_saite_choice" class="type_saite_choice_tittle">
-             <option value="" class="price_point">Выберите пункт...</option>
-             <option value="1">дизайн сайта 1</option>
-             <option value="2">дизайн сайта 2</option> 
-             <option value="3">дизайн сайта 3</option> 
+             <option class="price_point" value="">  Выберите пункт...</option>
+             <option class="price_point" value="1">  дизайн сайта 1</option>
+             <option class="price_point" value="2">  дизайн сайта 2</option> 
+             <option class="price_point" value="3">  дизайн сайта 3</option> 
             </select>
         </div>
         <div class="type_saite">
@@ -117,10 +120,10 @@
                 АДАПТИВНОСТЬ
             </p>
             <select name="design_saite_choice" class="type_saite_choice_tittle">
-             <option value="" class="price_point">Выберите пункт...</option>
-             <option value="1">Адаптивность сайта 1</option>
-             <option value="2">Адаптивность сайта 2</option> 
-             <option value="3">Адаптивность сайта 3</option> 
+             <option value="" class="price_point">  Выберите пункт...</option>
+             <option value="1"class="price_point">  Адаптивность сайта 1</option>
+             <option value="2"class="price_point">  Адаптивность сайта 2</option> 
+             <option value="3"class="price_point">  Адаптивность сайта 3</option> 
             </select>
         </div>
         <hr class="price_hr">
@@ -134,8 +137,8 @@
            <p>0</p>
          </div>
         </div>
-    </div>
-    <div class="statistics">
+    </section>
+    <section class="statistics">
         <p class="little_statictics">НЕМНОГО СТАТИСТИКИ</p>
         <hr class="hr_bottom_text">
     <div class="statistic_blocks">
@@ -160,14 +163,14 @@
             <p class="text_quantity">Наград получено</p>
         </div>
     </div>
-    </div>
-    <div class="reviews">
+    </section>
+    <section class="reviews">
         <p class="reviews_text">ОТЗЫВЫ</p>
         <hr class="hr_bottom_text">
         <img src="img/review_man.png" alt="man" class="reviews_man_png">
         <p class="reviers_text_comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus cum dolorem dicta magni officia minus.</p>
-    </div>
-    <div class="contact">
+    </section>
+    <section class="contact">
         <p class="contact_tittle_text">мои контакты</p>
         <hr class="hr_bottom_text">
         <p class="contact_bottom_text">Можете связаться со мной</p>
@@ -193,13 +196,18 @@
             </div>
              <textarea placeholder="Сообщение" class="massage_me_massage"></textarea>
              <input type="submit" placeholder="Отправить" class="submit_massage_me">
+             <div class="links">
+             <a href="https://wa.me/89776065617" title="_blank" target="_blank"><img src="img/whatsapp_icon-icons.com_65489.ico" alt="" class="links_contact"></a>
+             <a href="https://t.me/NikolasPolish" title="_blank" target="_blank"><img src="img/communication_message_socialmedia_chat_telegram_icon_218852.ico" alt=""class="links_contact"></a>
+             <a href="https://github.com/NikolasPolish" title="_blank" target="_blank"><img src="img/github_icon-icons.com_65450.ico" alt="" class="links_contact"></a>
+            </div>
         </div>
-    </div>
+    </section>
         <div class="map">
             <img src="img/map.png" alt="map">
         </div>
 
-    
+    </main>
     <footer>
         <div class="footer">
           <p class="footer_text">Польский Николай Design Web</p>
